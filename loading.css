@@ -1,0 +1,97 @@
+body{
+   background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+article{
+    text-align: center;
+}
+.sound_wave{
+    display: flex;
+    
+    align-items: center;
+    gap: 8px;
+    width: 100px;
+    height: 150px;
+}
+section{
+    width: 100%;
+    height: 150px;
+    background-color: brown;
+}
+.sound_wave2{
+    display: flex;
+    animation: normal 1.5s
+    infinite ease-in-out;
+}
+.sound_wave div {
+    /* height: 40px; */
+    display: block;
+    
+    width: 10px;
+    /* height: 6px; */
+    border-radius: 8px;
+    animation: loading 2.2s
+    infinite ease-in-out;
+}
+@keyframes loading {
+    0%{
+        /* height: 6px; */
+        transform: translateY(0);
+        background-color: red;
+        text-size-adjust: 2px;
+    }
+    25%{
+        /* height: 40px; */
+        transform: translateY(-5px) scaleY(1.5);
+        background-color: purple;
+        text-size-adjust: 4px;
+    }
+    50%{
+        /* height: 80px; */
+        transform: translateY(0);
+        background-color: yellow;
+        text-size-adjust: 8px;
+    }
+    100%{
+        /* height: 8px; */
+        transform: translateY(0);
+        background-color: red;
+    }
+}
+.sound_wave div:nth-child(1) {
+    left: 11px;
+    animation-delay: .2s;
+    color: red;
+}
+.sound_wave div:nth-child(2) {
+    left: 22px;
+    animation-delay: .4s;
+    color: greenyellow;
+}
+.sound_wave div:nth-child(3) {
+    left: 33px;
+    animation-delay: .6s;
+    color: purple;
+}
+.sound_wave div:nth-child(4) {
+    left: 44px;
+    animation-delay: .8s;
+    color: blue;
+}
+.sound_wave div:nth-child(5) {
+    left: 44px;
+    animation-delay: 1s;
+    color: burlywood;
+}
+.sound_wave div:nth-child(6) {
+    left: 44px;
+    animation-delay: 1.2s;
+    color:grey;
+}
+.sound_wave div:nth-child(7) {
+    left: 44px;
+    animation-delay: 1.4s;
+    color:crimson;
+}
